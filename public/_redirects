@@ -1,0 +1,135 @@
+# Netlify redirects for SEO-optimized SPA - Serve static HTML for all crawlers
+
+# Homepage redirects for all bots and crawlers
+/  /index.html  200  User-Agent=*bot*
+/  /index.html  200  User-Agent=*crawler*
+/  /index.html  200  User-Agent=*spider*
+/  /index.html  200  User-Agent=*Googlebot*
+/  /index.html  200  User-Agent=*Bingbot*
+/  /index.html  200  User-Agent=*facebookexternalhit*
+/  /index.html  200  User-Agent=*Twitterbot*
+/  /index.html  200  User-Agent=*LinkedInBot*
+/  /index.html  200  User-Agent=*SEOkicks*
+/  /index.html  200  User-Agent=*seobility*
+/  /index.html  200  User-Agent=*Seobility*
+
+# Cloud page redirects
+/cloud  /cloud.html  200  User-Agent=*bot*
+/cloud  /cloud.html  200  User-Agent=*crawler*
+/cloud  /cloud.html  200  User-Agent=*spider*
+/cloud  /cloud.html  200  User-Agent=*Googlebot*
+/cloud  /cloud.html  200  User-Agent=*Bingbot*
+/cloud  /cloud.html  200  User-Agent=*SEOkicks*
+/cloud  /cloud.html  200  User-Agent=*seobility*
+/cloud  /cloud.html  200  User-Agent=*Seobility*
+
+# Server page redirects
+/server  /server.html  200  User-Agent=*bot*
+/server  /server.html  200  User-Agent=*crawler*
+/server  /server.html  200  User-Agent=*spider*
+/server  /server.html  200  User-Agent=*Googlebot*
+/server  /server.html  200  User-Agent=*Bingbot*
+/server  /server.html  200  User-Agent=*SEOkicks*
+/server  /server.html  200  User-Agent=*seobility*
+/server  /server.html  200  User-Agent=*Seobility*
+
+# Hosting page redirects
+/hosting  /hosting.html  200  User-Agent=*bot*
+/hosting  /hosting.html  200  User-Agent=*crawler*
+/hosting  /hosting.html  200  User-Agent=*spider*
+/hosting  /hosting.html  200  User-Agent=*Googlebot*
+/hosting  /hosting.html  200  User-Agent=*Bingbot*
+/hosting  /hosting.html  200  User-Agent=*SEOkicks*
+/hosting  /hosting.html  200  User-Agent=*seobility*
+/hosting  /hosting.html  200  User-Agent=*Seobility*
+
+# Colocation page redirects
+/colocation  /colocation.html  200  User-Agent=*bot*
+/colocation  /colocation.html  200  User-Agent=*crawler*
+/colocation  /colocation.html  200  User-Agent=*spider*
+/colocation  /colocation.html  200  User-Agent=*Googlebot*
+/colocation  /colocation.html  200  User-Agent=*Bingbot*
+/colocation  /colocation.html  200  User-Agent=*SEOkicks*
+/colocation  /colocation.html  200  User-Agent=*seobility*
+/colocation  /colocation.html  200  User-Agent=*Seobility*
+
+# Managed IT Services page redirects
+/managed-it-services  /managed-it-services.html  200  User-Agent=*bot*
+/managed-it-services  /managed-it-services.html  200  User-Agent=*crawler*
+/managed-it-services  /managed-it-services.html  200  User-Agent=*spider*
+/managed-it-services  /managed-it-services.html  200  User-Agent=*Googlebot*
+/managed-it-services  /managed-it-services.html  200  User-Agent=*Bingbot*
+/managed-it-services  /managed-it-services.html  200  User-Agent=*SEOkicks*
+/managed-it-services  /managed-it-services.html  200  User-Agent=*seobility*
+/managed-it-services  /managed-it-services.html  200  User-Agent=*Seobility*
+
+# Solutions page redirects
+/solutions  /solutions.html  200  User-Agent=*bot*
+/solutions  /solutions.html  200  User-Agent=*crawler*
+/solutions  /solutions.html  200  User-Agent=*spider*
+/solutions  /solutions.html  200  User-Agent=*Googlebot*
+/solutions  /solutions.html  200  User-Agent=*Bingbot*
+/solutions  /solutions.html  200  User-Agent=*SEOkicks*
+/solutions  /solutions.html  200  User-Agent=*seobility*
+/solutions  /solutions.html  200  User-Agent=*Seobility*
+
+# Contact page redirects
+/contact  /contact.html  200  User-Agent=*bot*
+/contact  /contact.html  200  User-Agent=*crawler*
+/contact  /contact.html  200  User-Agent=*spider*
+/contact  /contact.html  200  User-Agent=*Googlebot*
+/contact  /contact.html  200  User-Agent=*Bingbot*
+/contact  /contact.html  200  User-Agent=*SEOkicks*
+/contact  /contact.html  200  User-Agent=*seobility*
+/contact  /contact.html  200  User-Agent=*Seobility*
+
+# About page redirects
+/about  /about.html  200  User-Agent=*bot*
+/about  /about.html  200  User-Agent=*crawler*
+/about  /about.html  200  User-Agent=*spider*
+/about  /about.html  200  User-Agent=*Googlebot*
+/about  /about.html  200  User-Agent=*Bingbot*
+/about  /about.html  200  User-Agent=*SEOkicks*
+/about  /about.html  200  User-Agent=*seobility*
+/about  /about.html  200  User-Agent=*Seobility*
+
+# Testimonials page redirects
+/testimonials  /testimonials.html  200  User-Agent=*bot*
+/testimonials  /testimonials.html  200  User-Agent=*crawler*
+/testimonials  /testimonials.html  200  User-Agent=*spider*
+/testimonials  /testimonials.html  200  User-Agent=*Googlebot*
+/testimonials  /testimonials.html  200  User-Agent=*Bingbot*
+/testimonials  /testimonials.html  200  User-Agent=*SEOkicks*
+/testimonials  /testimonials.html  200  User-Agent=*seobility*
+/testimonials  /testimonials.html  200  User-Agent=*Seobility*
+
+# Legal pages redirects
+/impressum  /impressum.html  200  User-Agent=*bot*
+/impressum  /impressum.html  200  User-Agent=*crawler*
+/impressum  /impressum.html  200  User-Agent=*spider*
+/impressum  /impressum.html  200  User-Agent=*Googlebot*
+/impressum  /impressum.html  200  User-Agent=*Bingbot*
+/impressum  /impressum.html  200  User-Agent=*SEOkicks*
+/impressum  /impressum.html  200  User-Agent=*seobility*
+/impressum  /impressum.html  200  User-Agent=*Seobility*
+
+/datenschutz  /datenschutz.html  200  User-Agent=*bot*
+/datenschutz  /datenschutz.html  200  User-Agent=*crawler*
+/datenschutz  /datenschutz.html  200  User-Agent=*spider*
+/datenschutz  /datenschutz.html  200  User-Agent=*Googlebot*
+/datenschutz  /datenschutz.html  200  User-Agent=*Bingbot*
+/datenschutz  /datenschutz.html  200  User-Agent=*SEOkicks*
+/datenschutz  /datenschutz.html  200  User-Agent=*seobility*
+/datenschutz  /datenschutz.html  200  User-Agent=*Seobility*
+
+/agb  /agb.html  200  User-Agent=*bot*
+/agb  /agb.html  200  User-Agent=*crawler*
+/agb  /agb.html  200  User-Agent=*spider*
+/agb  /agb.html  200  User-Agent=*Googlebot*
+/agb  /agb.html  200  User-Agent=*Bingbot*
+/agb  /agb.html  200  User-Agent=*SEOkicks*
+/agb  /agb.html  200  User-Agent=*seobility*
+/agb  /agb.html  200  User-Agent=*Seobility*
+
+# Fallback to SPA for regular users
+/*  /index.html  200

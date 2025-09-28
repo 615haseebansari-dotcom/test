@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Important pages to crawl
+Allow: /cloud
+Allow: /server  
+Allow: /hosting
+Allow: /colocation
+Allow: /managed-it-services
+Allow: /solutions
+Allow: /contact
+Allow: /about
+Allow: /testimonials
+
+# Legal pages (low priority)
+Allow: /impressum
+Allow: /datenschutz
+Allow: /agb
+
+# Sitemap
+Sitemap: https://wolkenbunker.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin and API areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /*.json$
