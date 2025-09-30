@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckCircle, ArrowLeft } from 'lucide-react';
 import Header from '../components/Header';
@@ -13,6 +14,11 @@ interface ThankYouPageProps {
 export default function ThankYouPage({ isMenuOpen, setIsMenuOpen }: ThankYouPageProps) {
   const navigate = useNavigate();
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleBackToHome = () => {
     navigate('/');
   };
@@ -25,8 +31,8 @@ export default function ThankYouPage({ isMenuOpen, setIsMenuOpen }: ThankYouPage
       />
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       
-      <main className="pt-20 flex-grow bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <main className="min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center">
             <div className="mb-8 inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full">
               <CheckCircle className="w-8 h-8 text-green-600" />
