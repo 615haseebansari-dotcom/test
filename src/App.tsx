@@ -13,7 +13,6 @@ import DatenschutzPage from './pages/DatenschutzPage';
 import AGBPage from './pages/AGBPage';
 import AboutUsPage from './pages/AboutUsPage';
 import TestimonialsPage from './pages/TestimonialsPage';
-import ThankYouPage from './pages/ThankYouPage';
 import CookieBanner from './components/CookieBanner';
 
 function App() {
@@ -36,7 +35,6 @@ function App() {
           <Route path="/datenschutz" element={<DatenschutzPage isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />} />
           <Route path="/impressum" element={<ImpressumPage isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />} />
           <Route path="/agb" element={<AGBPage isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />} />
-          <Route path="/thank-you" element={<ThankYouPage isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />} />
         </Routes>
         <CookieBanner />
       </div>
