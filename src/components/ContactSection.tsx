@@ -1,9 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function ContactSection() {
-  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [submitStatus, setSubmitStatus] = React.useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = React.useState('');
@@ -122,8 +120,11 @@ export default function ContactSection() {
           message: '',
           privacyConsent: false
         });
-        // Navigate to thank you page
-        navigate('/thank-you');
+        // Scroll to the top of the form section
+        const formElement = document.querySelector('#contact form');
+        if (formElement) {
+          formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       } else {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
@@ -219,7 +220,7 @@ export default function ContactSection() {
               )}
 
               {/* Hidden Netlify Form for bot detection */}
-              <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+              <form name="contact" netlify netlify-honeypot="bot-field" hidden>
                 <input type="text" name="firstName" />
                 <input type="text" name="lastName" />
                 <input type="email" name="email" />
