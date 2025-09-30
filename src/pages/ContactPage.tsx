@@ -10,6 +10,20 @@ interface ContactPageProps {
 }
 
 export default function ContactPage({ isMenuOpen, setIsMenuOpen }: ContactPageProps) {
+  const formRef = React.useRef<HTMLDivElement>(null);
+
+  const scrollToFormWithOffset = () => {
+    if (formRef.current) {
+      const offset = 100; // Adjust this value to control how far up to scroll
+      const elementPosition = formRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -54,6 +68,7 @@ export default function ContactPage({ isMenuOpen, setIsMenuOpen }: ContactPagePr
     if (!isFormValid) {
       setSubmitStatus('error');
       setErrorMessage('Bitte füllen Sie alle Pflichtfelder aus.');
+      scrollToFormWithOffset();
       return;
     }
 
@@ -112,6 +127,7 @@ export default function ContactPage({ isMenuOpen, setIsMenuOpen }: ContactPagePr
 
       if (response.ok || response.status === 200) {
         setSubmitStatus('success');
+        scrollToFormWithOffset();
         // Reset form after successful submission
         setFormData({
           firstName: '',
@@ -130,6 +146,7 @@ export default function ContactPage({ isMenuOpen, setIsMenuOpen }: ContactPagePr
       console.error('Error sending email:', error);
       setSubmitStatus('error');
       setErrorMessage('Verbindungsfehler. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per Telefon oder E-Mail.');
+      scrollToFormWithOffset();
     } finally {
       setIsSubmitting(false);
     }
@@ -250,7 +267,7 @@ export default function ContactPage({ isMenuOpen, setIsMenuOpen }: ContactPagePr
             </div>
             
             {/* Contact Form */}
-            <div className="relative">
+            <div className="relative" ref={formRef}>
               <div className="bg-white/90 backdrop-blur-sm shadow-2xl p-8 rounded-2xl border border-gray-200 relative overflow-hidden">
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-blue-50/50 pointer-events-none"></div>
